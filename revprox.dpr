@@ -93,10 +93,10 @@ begin
     sockTunnel.SendString('TUNN' + fid);
     RelayTCP(sockProxy, sockTunnel);
   end;
-    sockProxy.CloseSocket;
-    sockTunnel.CloseSocket;
-    sockProxy.Free;
-    sockTunnel.Free;
+  sockProxy.CloseSocket;
+  sockTunnel.CloseSocket;
+  sockProxy.Free;
+  sockTunnel.Free;
 end;
 
 //do both direction TCP proxy tunnel
